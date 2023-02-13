@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+		ng-app="LoginModule" ng-controller="LoginController as SIF">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="styles/styles.css" rel="stylesheet" />
+	<link href="styles/bootstrap.min.css" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<title>Login</title>
+	<!--JQuery-->
+	<script src="scripts/jquery-3.6.0.min.js"></script>
+
+	<!--Angular-->
+	<script src="scripts/angular.min.js"></script>
+
+	<!--Bootstrap-->
+	<script src="scripts/bootstrap.min.js"></script>
+
+	<!--Módulo-->
+	<script src="scripts/SifBranchModule.js"></script>
+
+	<!--BootstrapTools-->
+	<script src="scripts/BootstrapTools.js"></script>
+
+	<!--HttpHelper-->
+	<script src="scripts/httpHelper.js"></script>
+
+	<!--Controlador-->
+	<script src="scripts/LoginController.js"></script>
+
+	<!--Labels-->
+	<script src="scripts/SummitLabels.js"></script>
+
+</head>
+<body>
+	<div class="container-form">
+		<h1 class="title">Login</h1>
+		<form ng-submit="SIF.submit()">
+			<div class="form-input">
+				<username></username>
+			</div>
+			<div class="form-input">
+				<password></password>
+			</div>
+			<div class="form-input">
+				<button type="submit" class="btn-login">LOGIN</button>
+			</div>
+
+		</form>
+		<div class="form-input">
+			<button class="btn-cancel" ng-click="SIF.cancel()">Cancel</button>
+		</div>
+		<div class="form-input">
+			<a class="link" href="#">Forgot password?</a>
+		</div>
+		<sif-error-dialog></sif-error-dialog>
+		<sif-wait-dialog></sif-wait-dialog>
+		<sif-confirm-dialog></sif-confirm-dialog>
+		<sif-continue-trx></sif-continue-trx>
+	</div>
+</body>
+</html>

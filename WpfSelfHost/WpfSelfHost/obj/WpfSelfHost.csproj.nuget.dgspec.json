@@ -1,0 +1,146 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\proyectos\\Bancolombia\\WpfSelfHost V5\\SIFWEB\\WpfSelfHost\\WpfSelfHost\\WpfSelfHost.csproj": {}
+  },
+  "projects": {
+    "D:\\proyectos\\Bancolombia\\WpfSelfHost V5\\SIFWEB\\WpfSelfHost\\Sif.Base\\Sif.Base.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\proyectos\\Bancolombia\\WpfSelfHost V5\\SIFWEB\\WpfSelfHost\\Sif.Base\\Sif.Base.csproj",
+        "projectName": "Sif.Base",
+        "projectPath": "D:\\proyectos\\Bancolombia\\WpfSelfHost V5\\SIFWEB\\WpfSelfHost\\Sif.Base\\Sif.Base.csproj",
+        "frameworks": {
+          "net45": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net45": {}
+      }
+    },
+    "D:\\proyectos\\Bancolombia\\WpfSelfHost V5\\SIFWEB\\WpfSelfHost\\SifBranch.Client\\SifBranch.Client.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\proyectos\\Bancolombia\\WpfSelfHost V5\\SIFWEB\\WpfSelfHost\\SifBranch.Client\\SifBranch.Client.csproj",
+        "projectName": "SifBranch.Client",
+        "projectPath": "D:\\proyectos\\Bancolombia\\WpfSelfHost V5\\SIFWEB\\WpfSelfHost\\SifBranch.Client\\SifBranch.Client.csproj",
+        "frameworks": {
+          "net45": {
+            "projectReferences": {
+              "D:\\proyectos\\Bancolombia\\WpfSelfHost V5\\SIFWEB\\WpfSelfHost\\Sif.Base\\Sif.Base.csproj": {
+                "projectPath": "D:\\proyectos\\Bancolombia\\WpfSelfHost V5\\SIFWEB\\WpfSelfHost\\Sif.Base\\Sif.Base.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net45": {}
+      }
+    },
+    "D:\\proyectos\\Bancolombia\\WpfSelfHost V5\\SIFWEB\\WpfSelfHost\\SifBranchClient.Security\\SifBranchClient.Security.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\proyectos\\Bancolombia\\WpfSelfHost V5\\SIFWEB\\WpfSelfHost\\SifBranchClient.Security\\SifBranchClient.Security.csproj",
+        "projectName": "SifBranchClient.Security",
+        "projectPath": "D:\\proyectos\\Bancolombia\\WpfSelfHost V5\\SIFWEB\\WpfSelfHost\\SifBranchClient.Security\\SifBranchClient.Security.csproj",
+        "frameworks": {
+          "net45": {
+            "projectReferences": {
+              "D:\\proyectos\\Bancolombia\\WpfSelfHost V5\\SIFWEB\\WpfSelfHost\\Sif.Base\\Sif.Base.csproj": {
+                "projectPath": "D:\\proyectos\\Bancolombia\\WpfSelfHost V5\\SIFWEB\\WpfSelfHost\\Sif.Base\\Sif.Base.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net45": {}
+      }
+    },
+    "D:\\proyectos\\Bancolombia\\WpfSelfHost V5\\SIFWEB\\WpfSelfHost\\WpfSelfHost\\WpfSelfHost.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\proyectos\\Bancolombia\\WpfSelfHost V5\\SIFWEB\\WpfSelfHost\\WpfSelfHost\\WpfSelfHost.csproj",
+        "projectName": "WpfSelfHost",
+        "projectPath": "D:\\proyectos\\Bancolombia\\WpfSelfHost V5\\SIFWEB\\WpfSelfHost\\WpfSelfHost\\WpfSelfHost.csproj",
+        "packagesPath": "D:\\Users\\ycorreca\\.nuget\\packages\\",
+        "outputPath": "D:\\proyectos\\Bancolombia\\WpfSelfHost V5\\SIFWEB\\WpfSelfHost\\WpfSelfHost\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "D:\\Users\\ycorreca\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net45"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/SummitSystemsSW/_packaging/Summit.SIF/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net45": {
+            "targetAlias": "net4.5-windows",
+            "projectReferences": {
+              "D:\\proyectos\\Bancolombia\\WpfSelfHost V5\\SIFWEB\\WpfSelfHost\\Sif.Base\\Sif.Base.csproj": {
+                "projectPath": "D:\\proyectos\\Bancolombia\\WpfSelfHost V5\\SIFWEB\\WpfSelfHost\\Sif.Base\\Sif.Base.csproj"
+              },
+              "D:\\proyectos\\Bancolombia\\WpfSelfHost V5\\SIFWEB\\WpfSelfHost\\SifBranch.Client\\SifBranch.Client.csproj": {
+                "projectPath": "D:\\proyectos\\Bancolombia\\WpfSelfHost V5\\SIFWEB\\WpfSelfHost\\SifBranch.Client\\SifBranch.Client.csproj"
+              },
+              "D:\\proyectos\\Bancolombia\\WpfSelfHost V5\\SIFWEB\\WpfSelfHost\\SifBranchClient.Security\\SifBranchClient.Security.csproj": {
+                "projectPath": "D:\\proyectos\\Bancolombia\\WpfSelfHost V5\\SIFWEB\\WpfSelfHost\\SifBranchClient.Security\\SifBranchClient.Security.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net45": {
+          "targetAlias": "net4.5-windows",
+          "dependencies": {
+            "Microsoft.Owin": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
+            "Microsoft.Owin.Cors": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
+            "Microsoft.Owin.Host.HttpListener": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
+            "Microsoft.Owin.Hosting": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
+            "Microsoft.Owin.StaticFiles": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Owin": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.415\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win7-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

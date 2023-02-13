@@ -1,0 +1,22 @@
+﻿<div id="confirmDialog" class="modal fade" data-keyboard="false" data-backdrop="static" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4> Confirmación - {{SIF.messageCode}}</h4>
+			</div>
+			<div class="modal-body">
+				<p id="confirmDialogP" data-ng-message="{{SIF.confirmationMessage}}">
+					{{SIF.confirmationMessage}}
+				</p>
+			</div>
+			<div class="modal-footer">
+				<button id="confirmOk" type="button" class="btn-yes move" v-modal="SIF.confirmValue" value="true" prevent-dbl-submit>
+					{{SIF.userConfirmAcceptButtons ? "Aceptar" : "Sí"}}
+				</button>
+				<button id="confirmCancel" type="button" class="btn-no move" v-modal="SIF.confirmValue" value="true" prevent-dbl-submit>
+					{{SIF.userConfirmAcceptButtons ? "Cancelar" : "No"}}
+				</button>
+			</div>
+		</div>
+	</div>
+</div>

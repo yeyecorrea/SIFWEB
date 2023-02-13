@@ -1,0 +1,13 @@
+﻿<div id="waitDialog" class="ng-modal" ng-show="SIF.showWaitMessage"
+	  ng-keydown="waitDialogKeydown($event)" data-keyboard="false" data-backdrop="static"
+	  role="dialog">
+	<div class="ng-modal-overlay"></div>
+	<div class="ng-modal-dialog" ng-style="dialogStyle">
+		<div class="ng-modal-content">
+			<div class="ng-modal-body text-center">
+				<label id="labelWaitDialog">{{SIF.waitMessageText}}</label>
+			</div>
+		</div>
+	</div>
+
+</div>

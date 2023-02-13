@@ -1,0 +1,11 @@
+D:\Proyectos Summit\Capacitacion\WpfSelfHost\SifBranchClient.Security\bin\Debug\SifBranchClient.Security.dll
+D:\Proyectos Summit\Capacitacion\WpfSelfHost\SifBranchClient.Security\bin\Debug\SifBranchClient.Security.pdb
+D:\Proyectos Summit\Capacitacion\WpfSelfHost\SifBranchClient.Security\bin\Debug\Sif.Base.dll
+D:\Proyectos Summit\Capacitacion\WpfSelfHost\SifBranchClient.Security\bin\Debug\Newtonsoft.Json.dll
+D:\Proyectos Summit\Capacitacion\WpfSelfHost\SifBranchClient.Security\bin\Debug\Sif.Base.pdb
+D:\Proyectos Summit\Capacitacion\WpfSelfHost\SifBranchClient.Security\bin\Debug\Newtonsoft.Json.xml
+D:\Proyectos Summit\Capacitacion\WpfSelfHost\SifBranchClient.Security\obj\Debug\SifBranchClient.Security.csproj.AssemblyReference.cache
+D:\Proyectos Summit\Capacitacion\WpfSelfHost\SifBranchClient.Security\obj\Debug\SifBranchClient.Security.csproj.CoreCompileInputs.cache
+D:\Proyectos Summit\Capacitacion\WpfSelfHost\SifBranchClient.Security\obj\Debug\SifBranchClient.Security.csproj.CopyComplete
+D:\Proyectos Summit\Capacitacion\WpfSelfHost\SifBranchClient.Security\obj\Debug\SifBranchClient.Security.dll
+D:\Proyectos Summit\Capacitacion\WpfSelfHost\SifBranchClient.Security\obj\Debug\SifBranchClient.Security.pdb

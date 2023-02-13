@@ -1,0 +1,207 @@
+﻿<Window x:Class="WpfSelfHost.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfSelfHost"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600px" Width="1000px">
+	<Window.Resources>
+		<DataTemplate x:Key="listBoxCategoriesTemplate">
+			<TextBlock Margin="5,0,10,0" FontSize="20" Text="{Binding Description}"/>
+		</DataTemplate>
+		<DataTemplate x:Key="listBoxTransactionsTemplate">
+			<StackPanel Orientation="Horizontal">
+				<TextBlock Margin="5,0,10,0" FontSize="20" Text="{Binding TransactionCode}"/>
+				<TextBlock Margin="5,0,10,0" FontSize="20" Text="{Binding TransactionDescription}"/>
+			</StackPanel>
+		</DataTemplate>
+	</Window.Resources>
+	<DockPanel>
+		<Menu x:Name="MainMenu" Height="24" VerticalAlignment="Top"
+				DockPanel.Dock="Top" Width="Auto" Focusable="False">
+
+			<!--Archivo-->
+			<MenuItem x:Name="File" Header="Archivo" Focusable="True" InputGestureText="Alt-F4">
+				<MenuItem x:Name="m9027" Header="Salir" Click="menuItem_Click">
+				</MenuItem>
+			</MenuItem>
+
+			<!--Cuadre de Caja-->
+			<MenuItem x:Name="CashBalance" Header="Cuadre de Caja" Focusable="False">
+				<MenuItem Header="9001 - Consulta Diario Electrónico" Click="menuItem_Click" />
+				<MenuItem Header="9012 - Consulta del Diario de Oficinas" Click="menuItem_Click" />
+				<Separator/>
+				<MenuItem Header="9005 - Retransmisión de Transacciones" Click="menuItem_Click" />
+				<MenuItem Header="9006 - Usuarios con Retransmisiones Pendientes" Click="menuItem_Click" />
+				<MenuItem Header="9037 - Retransmisión de Transacciones por Archivo" Click="menuItem_Click" />
+				<MenuItem x:Name="Cuts" Header="Cortes" Click="menuItem_Click" >
+					<MenuItem Header="0220 - Generación de Cortes" Click="menuItem_Click" />
+					<MenuItem Header="0221 - Consulta de Cortes" Click="menuItem_Click" />
+					<MenuItem Header="0222 - Impresión de Cortes" Click="menuItem_Click" />
+				</MenuItem>
+			</MenuItem>
+
+			<!--Herramientas-->
+			<MenuItem x:Name="Tools" Header="Herramientas" Focusable="False">
+				<MenuItem Header="9085 - Calculadora" Click="menuItem_Click" />
+				<MenuItem Header="9079 - Contador de Billetes" Click="menuItem_Click" />
+				<MenuItem x:Name="FinancialCalculations" Header="Cálculos Financieros">
+					<MenuItem Header="Conversión Tasas" Click="menuItem_Click" />
+					<MenuItem Header="Rentas Uniformes" Click="menuItem_Click" />
+					<MenuItem Header="Valor Presente/Futuro" Click="menuItem_Click" />
+				</MenuItem>
+			</MenuItem>
+
+			<!--Totales-->
+			<MenuItem x:Name="Totals" Header="Totales" Focusable="False">
+				<MenuItem x:Name="Cashier" Header="Cajero">
+					<MenuItem Header="9059 - Totales Consolidados Usuarios" Click="menuItem_Click" />
+					<MenuItem Header="9102 - Cuenta Corriente y Ahorros" Click="menuItem_Click" />
+					<MenuItem Header="9103 - Tarjeta Crédito/CDT/TC Privada" Click="menuItem_Click" />
+					<MenuItem Header="9104 - Cartera/Cr.Hip/Caj/Fidu/Valores Banco" Click="menuItem_Click" />
+					<MenuItem Header="9105 - Efectivo/Cheques Gerencia" Click="menuItem_Click" />
+					<MenuItem Header="9106 - Especiales/Convenios/Varios" Click="menuItem_Click" />
+					<MenuItem Header="9107 - Novedades/Consultas" Click="menuItem_Click" />
+					<MenuItem Header="9108 - Inventarios/Firmas" Click="menuItem_Click" />
+				</MenuItem>
+				<MenuItem x:Name="Office" Header="Oficina">
+					<MenuItem Header="9013 - Consulta Totales"  Click="menuItem_Click" />
+					<MenuItem Header="9052 - Totales Consolidados Sucursal" Click="menuItem_Click" />
+					<MenuItem Header="9109 - Cuenta Corriente y Ahorros" Click="menuItem_Click" />
+					<MenuItem Header="9110 - Tarjeta Crédito/CDT/TC Privada" Click="menuItem_Click" />
+					<MenuItem Header="9111 - Cartera/Cr.Hip/Caj/Fidu/Valores Banco" Click="menuItem_Click" />
+					<MenuItem Header="9112 - Efectivo/Cheques Gerencia" Click="menuItem_Click" />
+					<MenuItem Header="9113 - Especiales/Convenios/Varios" Click="menuItem_Click" />
+					<MenuItem Header="9114 - Novedades/Consultas" Click="menuItem_Click" />
+					<MenuItem Header="9115 - Inventarios/Firmas" Click="menuItem_Click" />
+				</MenuItem>
+				<MenuItem Header="9055 - Cuadre F-543"  Click="menuItem_Click" />
+				<MenuItem Header="9056 - Cuadre F-543 Consolidado" Click="menuItem_Click" />
+				<MenuItem Header="Cuadre Recaudos Varios" Click="menuItem_Click" />
+				<MenuItem Header="Cuadre Recaudos Varios Consolidado" Click="menuItem_Click" />
+				<MenuItem x:Name="CuadreTerminalista" Header="Cuadre Terminalista">
+					<MenuItem Header="9035 - Venta de Chequeras" Click="menuItem_Click" />
+					<MenuItem Header="9955 - Nota Débito" Click="menuItem_Click" />
+					<MenuItem Header="9956 - Nota Crédito" Click="menuItem_Click" />
+					<MenuItem Header="9957 - Cheques de Gerencia" Click="menuItem_Click" />
+					<MenuItem Header="9958 - Ajuste Contabilidad Débito" Click="menuItem_Click" />
+					<MenuItem Header="9959 - Ajuste Contabilidad Crédito" Click="menuItem_Click" />
+				</MenuItem>
+				<MenuItem x:Name="OfficeBalance" Header="Cuadre Oficina">
+					<MenuItem Header="9036 - Venta de Chequeras" Click="menuItem_Click" />
+					<MenuItem Header="9978 - Nota Débito" Click="menuItem_Click" />
+					<MenuItem Header="9979 - Nota Crédito" Click="menuItem_Click" />
+					<MenuItem Header="9980 - Cheques de Gerencia" Click="menuItem_Click" />
+					<MenuItem Header="9981 - Ajuste Contabilidad Débito" Click="menuItem_Click" />
+					<MenuItem Header="9982 - Ajuste Contabilidad Crédito" Click="menuItem_Click" />
+				</MenuItem>
+			</MenuItem>
+
+			<!--Administración-->
+			<MenuItem x:Name="Management" Header="Administración" Focusable="False">
+				<MenuItem x:Name="Users" Header="Usuarios">
+					<MenuItem Header="9022 - Consulta Traslado de Usuarios" Click="menuItem_Click" />
+					<MenuItem Header="9024 - Consulta Lista de Usuarios" Click="menuItem_Click" />
+					<MenuItem Header="9028 - Consulta Eliminacion Traslado Usuarios" Click="menuItem_Click" />
+					<Separator/>
+					<MenuItem Header="9025 - Cierre Remoto de Usuario" Click="menuItem_Click" />
+					<MenuItem Header="9057 - Desbloqueo de Usuario" Click="menuItem_Click" />
+					<MenuItem Header="9066 - Delegación de Perfil" Click="menuItem_Click" />
+					<Separator/>
+					<MenuItem Header="9040 - Cambio de Modo del Cajero" Click="menuItem_Click" />
+					<Separator/>
+					<MenuItem Header="9080 - Envío Usuario de Sucursal" Click="menuItem_Click" />
+					<MenuItem Header="9081 - Recepción Usuario de Sucursal" Click="menuItem_Click" />
+					<MenuItem Header="9082 - Adición Usuario por Contingencia" Click="menuItem_Click" />
+					<MenuItem Header="9083 - Cambio de Rol Por Contingencia" Click="menuItem_Click" />
+					<MenuItem Header="9084 - Devolución Adición Usuario por Contingencia" Click="menuItem_Click" />
+					<Separator/>
+					<MenuItem Header="5035 - Exportar log de aplicación" Click="menuItem_Click" />
+				</MenuItem>
+				<MenuItem x:Name="Branches" Header="Oficinas">
+					<MenuItem Header="3070 - Cambio Oficina" Click="menuItem_Click" />
+					<MenuItem x:Name="BranchClose" Header="9034 - Cierre de Oficina" Click="menuItem_Click" />
+					<MenuItem Header="9090 - Cambio de Horario del Cajero" Click="menuItem_Click" />
+					<MenuItem Header="9092 - Informe de Transacciones Autorizadas" Click="menuItem_Click" />
+					<MenuItem Header="Autorización Recibidas" Click="menuItem_Click" />
+				</MenuItem>
+			</MenuItem>
+		</Menu>
+		<StatusBar Width="Auto" Height="32" DockPanel.Dock="Bottom" Focusable="False">
+			<StatusBarItem>
+				<TextBox x:Name="txtTransactionStatus" IsEnabled="False" IsTabStop="False"
+							Width="270" Text="Ingreso al sistema - Aceptada"/>
+			</StatusBarItem>
+			<StatusBarItem>
+				<TextBox x:Name="txtWorkingDate" IsEnabled="False" IsTabStop="False"
+							Width="70" AllowDrop="False" Text="21/06/2022"/>
+			</StatusBarItem>			
+			<StatusBarItem>
+				<TextBox x:Name="txtCurrentTime" IsEnabled="False" IsTabStop="False"
+							Width="70" Text="17:21:22"/>
+			</StatusBarItem>			
+			<StatusBarItem>
+				<TextBox x:Name="txtTellerLogon" IsEnabled="False" IsTabStop="False"
+							Width="150" Text="125"/>
+			</StatusBarItem>			
+			<StatusBarItem>
+				<TextBox x:Name="txtDefaultBranch" IsEnabled="True" IsTabStop="False"
+							Width="35" Text="001" AllowDrop="False"/>
+			</StatusBarItem>			
+			<StatusBarItem>
+				<TextBox x:Name="txtOverridesPending" IsEnabled="False" IsTabStop="False"
+							Width="17" Text="1"/>
+			</StatusBarItem>			
+			<StatusBarItem>
+				<TextBox x:Name="txtServerStatus" IsEnabled="False" IsTabStop="False"
+							Width="17" Text="A"/>
+			</StatusBarItem>			
+			<StatusBarItem>
+				<TextBox x:Name="txtTimer" IsEnabled="False" IsTabStop="False"
+							Width="27" Text="30"/>
+			</StatusBarItem>			
+			<StatusBarItem>
+				<TextBox x:Name="txtStatus" IsEnabled="False" IsTabStop="False"
+							Width="27" Text="OCA"/>
+			</StatusBarItem>			
+			<StatusBarItem>
+				<TextBox x:Name="txtActiveBranch" IsEnabled="True" IsTabStop="False"
+							Width="27" ToolTip="OficinaActiva" AllowDrop="False" Text="001"/>
+			</StatusBarItem>			
+			<StatusBarItem>
+				<TextBox x:Name="txtActiveUser" IsEnabled="False" IsTabStop="False"
+							Width="27"  Text="125"/>
+			</StatusBarItem>					
+			<StatusBarItem IsEnabled="True">
+				<TextBox x:Name="txtLineStatus" IsEnabled="True" IsReadOnly="True" IsTabStop="False"
+							BorderThickness="0,0,1,1"  Text="Online"/>
+			</StatusBarItem>
+		</StatusBar>
+		<Grid DockPanel.Dock="Top">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="233*"></ColumnDefinition>
+				<ColumnDefinition Width="669*"></ColumnDefinition>
+				<ColumnDefinition Width="185*"></ColumnDefinition>
+				<ColumnDefinition Width="20*"></ColumnDefinition>
+				<ColumnDefinition Width="646*"></ColumnDefinition>
+				<ColumnDefinition Width="1*"></ColumnDefinition>
+				<ColumnDefinition Width="70"></ColumnDefinition>
+			</Grid.ColumnDefinitions>
+			<ListBox x:Name="lbxCategories" Grid.Column="0" Height="auto" Width="auto" 
+						SelectionMode="Single" Grid.ColumnSpan="2" Margin="5,5,0,35"
+						ItemTemplate="{StaticResource listBoxCategoriesTemplate}"
+						KeyDown="lbxTransactions_KeyDown"/>
+			<ListBox x:Name="lbxTransactions" Grid.Column="2" Margin="0,5,5,35" Grid.ColumnSpan="5"
+						ItemsSource="{Binding Path=SelectedItem.TransactionsList, ElementName=lbxCategories}"
+						ItemTemplate="{StaticResource listBoxTransactionsTemplate}"
+						MouseDoubleClick="lbxTransactions_MouseDoubleClick"
+						KeyDown="lbxTransactions_KeyDown"/>
+			<Label Grid.Column="4" HorizontalAlignment="Right" Height="26" Margin="0,0,0,10" Content="Código rápido:"
+					 VerticalAlignment="Bottom" Width="96" FontWeight="Bold"/>
+			<TextBox x:Name="txtFastCode" Height="21" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="66"
+						AllowDrop="False" HorizontalAlignment="Right" Focusable="False"  Margin="0,0,5,10"
+						Grid.Column="6" Background="DarkGray" BorderThickness="2"/>
+		</Grid>
+	</DockPanel>
+</Window>

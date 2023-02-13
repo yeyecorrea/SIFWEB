@@ -1,0 +1,70 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Proyectos Summit\\Capacitacion\\WpfSelfHost\\WpfSelfHost\\WpfSelfHost.csproj": {}
+  },
+  "projects": {
+    "D:\\Proyectos Summit\\Capacitacion\\WpfSelfHost\\WpfSelfHost\\WpfSelfHost.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Proyectos Summit\\Capacitacion\\WpfSelfHost\\WpfSelfHost\\WpfSelfHost.csproj",
+        "projectName": "WpfSelfHost",
+        "projectPath": "D:\\Proyectos Summit\\Capacitacion\\WpfSelfHost\\WpfSelfHost\\WpfSelfHost.csproj",
+        "packagesPath": "D:\\Users\\mjoseb\\.nuget\\packages\\",
+        "outputPath": "D:\\Proyectos Summit\\Capacitacion\\WpfSelfHost\\WpfSelfHost\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "D:\\Users\\mjoseb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net45"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net45": {
+            "targetAlias": "net4.5-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net45": {
+          "targetAlias": "net4.5-windows",
+          "dependencies": {
+            "Microsoft.Owin": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
+            "Microsoft.Owin.Host.HttpListener": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
+            "Microsoft.Owin.Hosting": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
+            "Owin": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win7-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

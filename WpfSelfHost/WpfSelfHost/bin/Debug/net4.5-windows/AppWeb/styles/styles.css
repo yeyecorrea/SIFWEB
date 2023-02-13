@@ -1,0 +1,241 @@
+﻿
+/**{
+	margin:0;
+	padding:0;
+}*/
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	overflow-y: hidden;
+	font-family: 'Albert Sans', sans-serif;
+	background: #009FFF; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #ec2F4B, #009FFF); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container-form {
+	justify-content: center;
+	width: 300px;
+	height: fit-content;
+	background-color: white;
+	border: none;
+	border-radius: 10pt;
+	padding: 30px 15px;
+}
+
+.title {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-input {
+	display: flex;
+	flex-direction: column;
+	width: 85%;
+	margin: auto;
+	margin-bottom: 15px;
+}
+
+.label-login {
+	flex-grow: 1;
+	font-weight: 500;
+	color: black;
+	width: 100%;
+}
+
+.input-login {
+	flex-grow: 1;
+	height: 30px;
+	border: none;
+	border-bottom: 1px solid lightslategrey;
+	color: lightslategrey;
+	width: 100%;
+}
+
+button {
+	height: 35px;
+	border: none;
+	border-radius: 17pt;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.btn-login {
+	flex-grow: 1;
+	color: white;
+	background: #009FFF; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #ec2F4B, #009FFF); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	width: 90%;
+	margin: auto;
+}
+
+.btn-cancel {
+	flex-grow: 1;
+	background-color: lightslategrey;
+	color: white;
+	width: 90%;
+	margin: auto;
+}
+
+
+.link {
+}
+
+/*Estilos modal - error*/
+.btn-accept {
+	flex-grow: 1;
+	background-color: lightslategrey;
+	color: white;
+	width: 100%;
+	padding: 0 10px;
+	height: 35px;
+}
+
+.btn-yes {
+	flex-grow: 1;
+	color: white;
+	background: #009FFF; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #ec2F4B, #009FFF); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	width: 40%;
+	margin: 0 10px;
+}
+
+.btn-no {
+	flex-grow: 1;
+	background-color: lightslategrey;
+	color: white;
+	width: 40%;
+	margin: 0 10px;
+}
+
+/* Estilos para el nuevo modal de los mensajes*/
+
+.ng-modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1050;
+	overflow: hidden;
+	-webkit-overflow-scrolling: touch;
+	outline: 0;
+}
+
+
+
+.ng-modal-dialog {
+	z-index: 10000;
+	position: relative;
+	width: auto;
+	max-width: 550px;
+	margin: 10px auto !important;
+}
+
+
+
+.ng-modal-content {
+	position: relative;
+	background-color: silver;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	border: 1px solid #999;
+	border: 1px solid rgba(0, 0, 0, .2);
+	border-radius: 6px;
+	outline: 0;
+	-webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+	box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+}
+
+
+
+.ng-confirmDialog {
+	position: fixed;
+	transition: .5s ease;
+	top: calc(100% - 115px);
+	overflow: no-display;
+	left: calc(100% - 400px);
+	width: 400px !important;
+}
+
+
+
+.ng-modal-header {
+	min-height: 16.42857143px;
+	padding: 15px;
+	border-bottom: 0px;
+}
+
+
+
+.ng-modal-title {
+	margin: 0;
+	line-height: 1.42857143;
+}
+
+
+
+.ng-modal-body {
+	position: relative;
+	padding: 15px;
+}
+
+.ng-modal-footer {
+	padding: 15px;
+	text-align: center;
+	border-top: 0px;
+	display: inline-flex;
+	width: 100%;
+}
+
+.modal-footer {
+	text-align: center !important;
+}
+
+.ng-modal-overlay {
+	position: absolute;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	opacity: 0.5;
+}
+
+
+
+@media (min-width: 768px) {
+
+	div.ng-modal-dialog {
+		width: 600px;
+		margin: 10px auto !important;
+	}
+
+	.ng-modal-content {
+		-webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+		box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+	}
+
+	.ng-modal-sm {
+		width: 300px;
+	}
+}
+
+@media (min-width: 992px) {
+
+	.ng-modal-lg {
+		width: 900px;
+	}
+}

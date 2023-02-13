@@ -1,0 +1,533 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.5": {
+      "Microsoft.AspNet.Cors/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Web.Cors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Cors.dll": {}
+        }
+      },
+      "Microsoft.Owin/4.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.dll": {}
+        }
+      },
+      "Microsoft.Owin.Cors/4.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Cors": "5.0.0",
+          "Microsoft.Owin": "4.2.2",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Cors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Cors.dll": {}
+        }
+      },
+      "Microsoft.Owin.FileSystems/4.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.Owin.FileSystems.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.FileSystems.dll": {}
+        }
+      },
+      "Microsoft.Owin.Host.HttpListener/4.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "4.2.2",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Host.HttpListener.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Host.HttpListener.dll": {}
+        }
+      },
+      "Microsoft.Owin.Hosting/4.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "4.2.2",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Hosting.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Hosting.dll": {}
+        }
+      },
+      "Microsoft.Owin.StaticFiles/4.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "4.2.2",
+          "Microsoft.Owin.FileSystems": "4.2.2",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.StaticFiles.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.StaticFiles.dll": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Owin/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Owin.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Owin.dll": {}
+        }
+      },
+      "Sif.Base/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Sif.Base.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Sif.Base.dll": {}
+        }
+      },
+      "SifBranch.Client/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Sif.Base": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SifBranch.Client.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SifBranch.Client.dll": {}
+        }
+      },
+      "SifBranchClient.Security/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Sif.Base": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SifBranchClient.Security.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SifBranchClient.Security.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5/win7-x86": {
+      "Microsoft.AspNet.Cors/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Web.Cors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Cors.dll": {}
+        }
+      },
+      "Microsoft.Owin/4.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.dll": {}
+        }
+      },
+      "Microsoft.Owin.Cors/4.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Cors": "5.0.0",
+          "Microsoft.Owin": "4.2.2",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Cors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Cors.dll": {}
+        }
+      },
+      "Microsoft.Owin.FileSystems/4.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.Owin.FileSystems.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.FileSystems.dll": {}
+        }
+      },
+      "Microsoft.Owin.Host.HttpListener/4.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "4.2.2",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Host.HttpListener.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Host.HttpListener.dll": {}
+        }
+      },
+      "Microsoft.Owin.Hosting/4.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "4.2.2",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Hosting.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Hosting.dll": {}
+        }
+      },
+      "Microsoft.Owin.StaticFiles/4.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "4.2.2",
+          "Microsoft.Owin.FileSystems": "4.2.2",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.StaticFiles.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.StaticFiles.dll": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Owin/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Owin.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Owin.dll": {}
+        }
+      },
+      "Sif.Base/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Sif.Base.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Sif.Base.dll": {}
+        }
+      },
+      "SifBranch.Client/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Sif.Base": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SifBranch.Client.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SifBranch.Client.dll": {}
+        }
+      },
+      "SifBranchClient.Security/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Sif.Base": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SifBranchClient.Security.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SifBranchClient.Security.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.AspNet.Cors/5.0.0": {
+      "sha512": "jNwFhEnm0jRlaRCgHEk52hJQltVoM2Bllysv2NtPYrgsVWyS3r5BOtCXkM/lEZ5AdUUBOvha+4QAVcVp1MZp5g==",
+      "type": "package",
+      "path": "microsoft.aspnet.cors/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/System.Web.Cors.dll",
+        "microsoft.aspnet.cors.5.0.0.nupkg.sha512",
+        "microsoft.aspnet.cors.nuspec"
+      ]
+    },
+    "Microsoft.Owin/4.2.2": {
+      "sha512": "jt410l/8dvCIguRdU7dupYdm4kGLepVdD8EOTKU4nYZcLRrn6kQYqI6pbJOTJp7Vlm/T2WUF5bzyKK2z29xtjg==",
+      "type": "package",
+      "path": "microsoft.owin/4.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net45/Microsoft.Owin.dll",
+        "lib/net45/Microsoft.Owin.xml",
+        "microsoft.owin.4.2.2.nupkg.sha512",
+        "microsoft.owin.nuspec"
+      ]
+    },
+    "Microsoft.Owin.Cors/4.2.2": {
+      "sha512": "v5+J/LZ40kA7nmJi42nyOvZ10HrkLzg11tg9Gyxgns45QjmVBBuEhtUscs+JszL4YEglFwQPAK/iwcBIqAbb/w==",
+      "type": "package",
+      "path": "microsoft.owin.cors/4.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net45/Microsoft.Owin.Cors.dll",
+        "lib/net45/Microsoft.Owin.Cors.xml",
+        "microsoft.owin.cors.4.2.2.nupkg.sha512",
+        "microsoft.owin.cors.nuspec"
+      ]
+    },
+    "Microsoft.Owin.FileSystems/4.2.2": {
+      "sha512": "GDYA+V0xJkqdp5lRehCJ3vT8Fp1OjmKLvKibEvYTgwg41CtUXduo5xKpsfnZ2IYCszUSrGJ8OdUKtoFc7mpMcw==",
+      "type": "package",
+      "path": "microsoft.owin.filesystems/4.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net45/Microsoft.Owin.FileSystems.dll",
+        "lib/net45/Microsoft.Owin.FileSystems.xml",
+        "microsoft.owin.filesystems.4.2.2.nupkg.sha512",
+        "microsoft.owin.filesystems.nuspec"
+      ]
+    },
+    "Microsoft.Owin.Host.HttpListener/4.2.2": {
+      "sha512": "Kl1A0sBzfMD3qvX6XcGU0FopN6POFFRpIEQnKIAbvsShadIG9/UxgDdHVlX/IzFHXwIHfY59Ae4RGDVKYNvIqQ==",
+      "type": "package",
+      "path": "microsoft.owin.host.httplistener/4.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net45/Microsoft.Owin.Host.HttpListener.dll",
+        "lib/net45/Microsoft.Owin.Host.HttpListener.xml",
+        "microsoft.owin.host.httplistener.4.2.2.nupkg.sha512",
+        "microsoft.owin.host.httplistener.nuspec"
+      ]
+    },
+    "Microsoft.Owin.Hosting/4.2.2": {
+      "sha512": "KsupM0TNPUfLn1uHvQy22IX6VWE+wi7C2shseSnhO9JYFxgwWcsSmjxrRpw+xcD+4hA3O280tBxfZ6T+kJuhjg==",
+      "type": "package",
+      "path": "microsoft.owin.hosting/4.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net45/Microsoft.Owin.Hosting.dll",
+        "lib/net45/Microsoft.Owin.Hosting.xml",
+        "microsoft.owin.hosting.4.2.2.nupkg.sha512",
+        "microsoft.owin.hosting.nuspec"
+      ]
+    },
+    "Microsoft.Owin.StaticFiles/4.2.2": {
+      "sha512": "yRflUgZxWRMUap4QqDjev9q3tY9eGh6JETYKTD5UaVxbggRRfxhQ65QH/8vo6Wc9rSAlPIrLtd21EFfv83lxvQ==",
+      "type": "package",
+      "path": "microsoft.owin.staticfiles/4.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net45/Microsoft.Owin.StaticFiles.dll",
+        "lib/net45/Microsoft.Owin.StaticFiles.xml",
+        "microsoft.owin.staticfiles.4.2.2.nupkg.sha512",
+        "microsoft.owin.staticfiles.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/13.0.1": {
+      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "Owin/1.0.0": {
+      "sha512": "OseTFniKmyp76mEzOBwIKGBRS5eMoYNkMKaMXOpxx9jv88+b6mh1rSaw43vjBOItNhaLFG3d0a20PfHyibH5sw==",
+      "type": "package",
+      "path": "owin/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/Owin.dll",
+        "owin.1.0.0.nupkg.sha512",
+        "owin.nuspec"
+      ]
+    },
+    "Sif.Base/1.0.0": {
+      "type": "project",
+      "path": "../Sif.Base/Sif.Base.csproj",
+      "msbuildProject": "../Sif.Base/Sif.Base.csproj"
+    },
+    "SifBranch.Client/1.0.0": {
+      "type": "project",
+      "path": "../SifBranch.Client/SifBranch.Client.csproj",
+      "msbuildProject": "../SifBranch.Client/SifBranch.Client.csproj"
+    },
+    "SifBranchClient.Security/1.0.0": {
+      "type": "project",
+      "path": "../SifBranchClient.Security/SifBranchClient.Security.csproj",
+      "msbuildProject": "../SifBranchClient.Security/SifBranchClient.Security.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.5": [
+      "Microsoft.Owin >= 4.2.2",
+      "Microsoft.Owin.Cors >= 4.2.2",
+      "Microsoft.Owin.Host.HttpListener >= 4.2.2",
+      "Microsoft.Owin.Hosting >= 4.2.2",
+      "Microsoft.Owin.StaticFiles >= 4.2.2",
+      "Newtonsoft.Json >= 13.0.1",
+      "Owin >= 1.0.0",
+      "Sif.Base >= 1.0.0",
+      "SifBranch.Client >= 1.0.0",
+      "SifBranchClient.Security >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "D:\\Users\\ycorreca\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\proyectos\\Bancolombia\\WpfSelfHost V5\\SIFWEB\\WpfSelfHost\\WpfSelfHost\\WpfSelfHost.csproj",
+      "projectName": "WpfSelfHost",
+      "projectPath": "D:\\proyectos\\Bancolombia\\WpfSelfHost V5\\SIFWEB\\WpfSelfHost\\WpfSelfHost\\WpfSelfHost.csproj",
+      "packagesPath": "D:\\Users\\ycorreca\\.nuget\\packages\\",
+      "outputPath": "D:\\proyectos\\Bancolombia\\WpfSelfHost V5\\SIFWEB\\WpfSelfHost\\WpfSelfHost\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "D:\\Users\\ycorreca\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net45"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://pkgs.dev.azure.com/SummitSystemsSW/_packaging/Summit.SIF/nuget/v3/index.json": {}
+      },
+      "frameworks": {
+        "net45": {
+          "targetAlias": "net4.5-windows",
+          "projectReferences": {
+            "D:\\proyectos\\Bancolombia\\WpfSelfHost V5\\SIFWEB\\WpfSelfHost\\Sif.Base\\Sif.Base.csproj": {
+              "projectPath": "D:\\proyectos\\Bancolombia\\WpfSelfHost V5\\SIFWEB\\WpfSelfHost\\Sif.Base\\Sif.Base.csproj"
+            },
+            "D:\\proyectos\\Bancolombia\\WpfSelfHost V5\\SIFWEB\\WpfSelfHost\\SifBranch.Client\\SifBranch.Client.csproj": {
+              "projectPath": "D:\\proyectos\\Bancolombia\\WpfSelfHost V5\\SIFWEB\\WpfSelfHost\\SifBranch.Client\\SifBranch.Client.csproj"
+            },
+            "D:\\proyectos\\Bancolombia\\WpfSelfHost V5\\SIFWEB\\WpfSelfHost\\SifBranchClient.Security\\SifBranchClient.Security.csproj": {
+              "projectPath": "D:\\proyectos\\Bancolombia\\WpfSelfHost V5\\SIFWEB\\WpfSelfHost\\SifBranchClient.Security\\SifBranchClient.Security.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net45": {
+        "targetAlias": "net4.5-windows",
+        "dependencies": {
+          "Microsoft.Owin": {
+            "target": "Package",
+            "version": "[4.2.2, )"
+          },
+          "Microsoft.Owin.Cors": {
+            "target": "Package",
+            "version": "[4.2.2, )"
+          },
+          "Microsoft.Owin.Host.HttpListener": {
+            "target": "Package",
+            "version": "[4.2.2, )"
+          },
+          "Microsoft.Owin.Hosting": {
+            "target": "Package",
+            "version": "[4.2.2, )"
+          },
+          "Microsoft.Owin.StaticFiles": {
+            "target": "Package",
+            "version": "[4.2.2, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.1, )"
+          },
+          "Owin": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.415\\RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "win7-x86": {
+        "#import": []
+      }
+    }
+  }
+}
