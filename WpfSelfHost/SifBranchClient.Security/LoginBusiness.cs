@@ -10,7 +10,7 @@ namespace SifBranchClient.Security
 		public SifWebResponse Process()
 		{
 			SifWebResponse resp = new SifWebResponse();
-			if (this.Dictionary.Security.UserLogOn == "Majo" 
+			if (this.Dictionary.Security.UserLogOn == "Yeferson" 
 				&& this.Dictionary.Security.UserPassword == "12345")
 			{
 				resp.State = ServiceState.Accepted;
